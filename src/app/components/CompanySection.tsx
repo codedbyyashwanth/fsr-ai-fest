@@ -32,10 +32,10 @@ const CompanySection = () => {
                     speed={1000}
                     breakpoints={{
                         0: {
-                            slidesPerView: 5,
+                            slidesPerView: 3,
                         },
                         640: {
-                            slidesPerView: 5,
+                            slidesPerView: 3,
                         },
                         768: {
                             slidesPerView: 6,
@@ -47,7 +47,7 @@ const CompanySection = () => {
                 >
                 {logos.map(logo => (
                     <SwiperSlide key={logo.id}>
-                        <div key={logo.id} className="flex items-center justify-center w-30 h-30 mx-2 sm:w-42 sm:h-42">
+                        <div key={logo.id} className="flex items-center justify-center w-42 h-42 mx-2 sm:w-42 sm:h-42">
                             <img src={logo.src} alt={logo.alt} className="object-contain w-full h-full border border-gray-600 p-2 rounded-sm  " />
                         </div>
                     </SwiperSlide>

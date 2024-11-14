@@ -35,34 +35,35 @@ const Newsletter: React.FC = () => {
     return () => clearInterval(timer);
   }, [targetDate]);
 
-  return (<>
-  <h2 className="text-6xl font-bold mb-4 text-green-300 text-center mt-9">Registration open soon!</h2>
-    <div className="flex justify-center items-center  my-10">
-      
-      <div className="flex space-x-4 text-4xl font-mono text-gray-800 bg-gray-300 p-6 rounded-lg shadow-md w-full justify-center">
-        
-        <div className="flex flex-col items-center">
-          <span className="text-6xl font-bold">{String(timeLeft.days).padStart(2, '0')}</span>
-          <span className="text-sm">Days</span>
-        </div>
-        <span className="text-6xl font-bold">:</span>
-        <div className="flex flex-col items-center">
-          <span className="text-6xl font-bold">{String(timeLeft.hours).padStart(2, '0')}</span>
-          <span className="text-sm">Hours</span>
-        </div>
-        <span className="text-6xl font-bold">:</span>
-        <div className="flex flex-col items-center">
-          <span className="text-6xl font-bold">{String(timeLeft.minutes).padStart(2, '0')}</span>
-          <span className="text-sm">Minutes</span>
-        </div>
-        <span className="text-6xl font-bold">:</span>
-        <div className="flex flex-col items-center">
-          <span className="text-6xl font-bold">{String(timeLeft.seconds).padStart(2, '0')}</span>
-          <span className="text-sm">Seconds</span>
+  return (
+    <>
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-green-300 text-center mt-9">
+        Registration open soon!
+      </h2>
+      <div className="flex justify-center items-center my-10">
+        <div className="flex flex-wrap gap-4 text-2xl sm:text-4xl md:text-5xl font-mono text-gray-800 bg-gray-300 p-4 md:p-6 rounded-lg shadow-md w-full max-w-lg justify-center">
+          <div className="flex flex-col items-center">
+            <span className="text-4xl sm:text-5xl md:text-6xl font-bold">{String(timeLeft.days).padStart(2, '0')}</span>
+            <span className="text-xs sm:text-sm">Days</span>
+          </div>
+          <span className="text-4xl sm:text-5xl md:text-6xl font-bold">:</span>
+          <div className="flex flex-col items-center">
+            <span className="text-4xl sm:text-5xl md:text-6xl font-bold">{String(timeLeft.hours).padStart(2, '0')}</span>
+            <span className="text-xs sm:text-sm">Hours</span>
+          </div>
+          <span className="text-4xl sm:text-5xl md:text-6xl font-bold">:</span>
+          <div className="flex flex-col items-center">
+            <span className="text-4xl sm:text-5xl md:text-6xl font-bold">{String(timeLeft.minutes).padStart(2, '0')}</span>
+            <span className="text-xs sm:text-sm">Minutes</span>
+          </div>
+          <span className="text-4xl sm:text-5xl md:text-6xl font-bold">:</span>
+          <div className="flex flex-col items-center">
+            <span className="text-4xl sm:text-5xl md:text-6xl font-bold">{String(timeLeft.seconds).padStart(2, '0')}</span>
+            <span className="text-xs sm:text-sm">Seconds</span>
+          </div>
         </div>
       </div>
-    </div>
-  </>
+    </>
   );
 };
 

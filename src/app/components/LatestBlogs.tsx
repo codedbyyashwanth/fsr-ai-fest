@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Image from 'next/image'; // Import Next.js Image component
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
